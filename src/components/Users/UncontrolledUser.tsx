@@ -1,6 +1,6 @@
 import { UserInterface } from "./UserInterface"
 
-const User = ({user}: {user: UserInterface}) => {
+const UncontrolledUser = ({user}: {user: UserInterface}) => {
   return (
     <li>
       {user.name}
@@ -8,4 +8,4 @@ const User = ({user}: {user: UserInterface}) => {
   )
 }
 
-export default User
+export default UncontrolledUser

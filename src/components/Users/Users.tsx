@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import User from './User'
+import UncontrolledUser from './UncontrolledUser'
 import { UserInterface } from './UserInterface'
 import { fetchData } from '../utils/api'
 
@@ -29,7 +29,7 @@ const Users = () => {
     <ul>
       {isLoading && <p>Loading ...</p>}
       {users.map((user: UserInterface) => {
-        return <User key={user.id} user={user} />
+        return <UncontrolledUser key={user.id} user={user} />
       })}
     </ul>
   )
